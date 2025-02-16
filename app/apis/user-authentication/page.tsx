@@ -99,6 +99,63 @@ export default function AIImageUpscalerAPI() {
             </div>
           </div>
         </section>
+
+        {/* API Docs Section */}
+        <section className="py-20 px-4">
+          <div className="container mx-auto">
+            <h2 className="text-5xl font-bold text-center mb-6">
+              API Docs & Code Examples
+            </h2>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-xl text-gray-400 text-center mb-16">
+                Please find our API docs and try the API on the{" "}
+                <a href="#" className="text-blue-500 hover:underline">
+                  RapidAPI Playground
+                </a>
+                . Code samples are available for all language and frameworks -
+                JavaScript / Node.js, Python, PHP, Swift, and more:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-8 max-w-3xl mx-auto">
+              <Image
+                src="/js.png"
+                alt="JavaScript"
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
+              <Image
+                src="/python.png"
+                alt="Python"
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
+              <Image
+                src="/nodejs.png"
+                alt="Node.js"
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
+              <Image
+                src="/php.png"
+                alt="PHP"
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
+              <Image
+                src="/swift.svg"
+                alt="Swift"
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
