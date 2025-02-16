@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function AIImageUpscalerAPI() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
@@ -24,9 +24,8 @@ export default function AIImageUpscalerAPI() {
               improved resolution and clarity.
             </p>
             <Button
-              variant="outline"
+              className="bg-white text-black hover:bg-gray-200 transition-colors"
               size="lg"
-              className="border-white/20 hover:bg-white/10"
             >
               Try for Free
             </Button>
@@ -36,65 +35,67 @@ export default function AIImageUpscalerAPI() {
         {/* API Data Samples */}
         <section className="py-20 px-4">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-4">
+            <h2 className="text-5xl font-bold text-center mb-6">
               API Data Samples
             </h2>
-            <p className="text-gray-400 text-center mb-12">
+            <p className="text-xl text-gray-400 text-center mb-16">
               Response data samples of the different kinds of objects the API
               provides
             </p>
 
             <div className="max-w-3xl mx-auto">
-              <button
-                className="w-full p-6 bg-black border border-white/10 rounded-lg hover:bg-white/5 transition-colors text-left flex justify-between items-center group"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                <span className="text-lg font-semibold group-hover:text-gray-300">
-                  Image Upscaling
-                </span>
-                <svg
-                  className={`w-6 h-6 text-gray-400 transition-transform ${
-                    isOpen ? "rotate-90" : ""
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  className="w-full p-6 bg-black text-left flex justify-between items-center group hover:bg-white/5 transition-colors"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
+                  <span className="text-lg font-semibold group-hover:text-gray-300">
+                    Image Upscaling
+                  </span>
+                  <svg
+                    className={`w-6 h-6 text-gray-400 transition-transform ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
 
-              {isOpen && (
-                <div className="mt-4 p-6 border border-white/10 rounded-lg">
-                  <div className="grid grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-semibold">Before</h3>
-                      <Image
-                        src="https://storage.googleapis.com/apihub85/0_1.webp"
-                        alt="Before upscaling"
-                        width={400}
-                        height={400}
-                        className="rounded-lg w-full"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-semibold">After</h3>
-                      <Image
-                        src="https://storage.googleapis.com/apihub85/upscaled_image.png"
-                        alt="After upscaling"
-                        width={400}
-                        height={400}
-                        className="rounded-lg w-full"
-                      />
+                {isOpen && (
+                  <div className="p-6 border-t border-white/10">
+                    <div className="grid grid-cols-2 gap-8">
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-semibold">Before</h3>
+                        <Image
+                          src="https://storage.googleapis.com/apihub85/0_1.webp"
+                          alt="Before upscaling"
+                          width={400}
+                          height={400}
+                          className="rounded-lg w-full"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-semibold">After</h3>
+                        <Image
+                          src="https://storage.googleapis.com/apihub85/upscaled_image.png"
+                          alt="After upscaling"
+                          width={400}
+                          height={400}
+                          className="rounded-lg w-full"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </div>
         </section>
