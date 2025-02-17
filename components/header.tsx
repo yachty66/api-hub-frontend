@@ -35,7 +35,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="mailto:contact@apilexica.com"
+                href="#talk-to-us"
                 className="hover:text-gray-300 transition-colors"
               >
                 Talk to Us
