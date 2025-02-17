@@ -16,9 +16,18 @@ export default function AIImageUpscalerAPI() {
         {/* Hero Section */}
         <section className="py-20 px-4 bg-black/50 border-b border-white/10">
           <div className="container mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">
-              Premium AI Image Upscaler API
-            </h1>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <Image
+                src="/premium-image-upscaling-api-logo.png"
+                alt="API Logo"
+                width={80}
+                height={80}
+                className="rounded-lg"
+              />
+              <h1 className="text-5xl font-bold">
+                Premium AI Image Upscaler API
+              </h1>
+            </div>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
               Transform your images into high-quality, enhanced versions with
               improved resolution and clarity.
