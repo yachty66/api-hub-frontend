@@ -1,7 +1,8 @@
-import Header from "@/components/header"
-import LandingPage from "@/components/landing-page"
-import ApiList from "@/components/api-list"
-import Footer from "@/components/footer"
+import Header from "@/components/header";
+import LandingPage from "@/components/landing-page";
+import ApiList from "@/components/api-list";
+import TalkToUs from "@/components/talk-to-us";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <main className="flex-grow">
         <LandingPage />
         <ApiList />
+        <TalkToUs />
       </main>
       <Footer />
     </div>
-  )
+  );
 }

@@ -11,12 +11,12 @@ export default function Header() {
         >
           <Image
             src="/logo.png"
-            alt="API Hub Logo"
+            alt="API Lexica Logo"
             width={48}
             height={48}
             className="w-12 h-12"
           />
-          <span>API Hub</span>
+          <span>API Lexica</span>
         </Link>
         <nav>
           <ul className="flex space-x-6">
@@ -34,9 +34,12 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-gray-300 transition-colors">
-                Documentation
-              </Link>
+              <a
+                href="mailto:contact@apilexica.com"
+                className="hover:text-gray-300 transition-colors"
+              >
+                Talk to Us
+              </a>
             </li>
           </ul>
         </nav>

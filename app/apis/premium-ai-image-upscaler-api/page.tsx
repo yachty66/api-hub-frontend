@@ -35,8 +35,15 @@ export default function AIImageUpscalerAPI() {
             <Button
               className="bg-white text-black hover:bg-gray-200 transition-colors"
               size="lg"
+              asChild
             >
-              Try for Free
+              <a
+                href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Try for Free
+              </a>
             </Button>
           </div>
         </section>
@@ -118,7 +125,12 @@ export default function AIImageUpscalerAPI() {
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400 text-center mb-16">
                 Please find our API docs and try the API on the{" "}
-                <a href="#" className="text-blue-500 hover:underline">
+                <a
+                  href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1"
+                  className="text-blue-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   RapidAPI Playground
                 </a>
                 . Code samples are available for all language and frameworks -

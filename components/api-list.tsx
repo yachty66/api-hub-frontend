@@ -1,43 +1,22 @@
-import {
-  Users,
-  BarChart,
-  CreditCard,
-  MessageSquare,
-  HardDrive,
-} from "lucide-react";
+import { BarChart, CreditCard, MessageSquare, HardDrive } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const apis = [
   {
-    name: "User Authentication API",
-    description: "Secure user authentication and authorization",
-    icon: Users,
-    href: "/apis/user-authentication",
-  },
-  {
-    name: "Data Analytics API",
-    description: "Real-time data processing and analytics",
-    icon: BarChart,
-    href: "/apis/data-analytics",
-  },
-  {
-    name: "Payment Gateway API",
-    description: "Seamless payment processing integration",
-    icon: CreditCard,
-    href: "/apis/payment-gateway",
-  },
-  {
-    name: "Messaging API",
-    description: "Real-time messaging and notifications",
-    icon: MessageSquare,
-    href: "/apis/messaging",
-  },
-  {
-    name: "File Storage API",
-    description: "Cloud-based file storage and management",
-    icon: HardDrive,
-    href: "/apis/file-storage",
-  },
+    name: "Premium AI Image Upscaler API",
+    description: "Transform your images into high-quality, enhanced versions",
+    customIcon: (
+      <Image
+        src="/premium-image-upscaling-api-logo.png"
+        alt="Premium AI Image Upscaler"
+        width={48}
+        height={48}
+        className="w-12 h-12"
+      />
+    ),
+    href: "/apis/premium-ai-image-upscaler-api",
+  }
 ];
 
 export default function ApiList() {
@@ -51,7 +30,11 @@ export default function ApiList() {
               key={index}
               className="border border-white/10 rounded-lg p-6 hover:bg-white/5 transition-colors group"
             >
-              <api.icon className="w-12 h-12 mb-4 text-white group-hover:text-gray-300 transition-colors" />
+              {api.customIcon ? (
+                api.customIcon
+              ) : (
+                <api.icon className="w-12 h-12 mb-4 text-white group-hover:text-gray-300 transition-colors" />
+              )}
               <h3 className="text-xl font-semibold mb-2 group-hover:text-gray-300 transition-colors">
                 {api.name}
               </h3>
