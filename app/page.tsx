@@ -3,6 +3,8 @@ import LandingPage from "@/components/landing-page";
 import ApiList from "@/components/api-list";
 import TalkToUs from "@/components/talk-to-us";
 import Footer from "@/components/footer";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
