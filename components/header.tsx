@@ -27,19 +27,21 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="#apis"
+                href="/#apis"
                 className="hover:text-gray-300 transition-colors"
+                scroll={true}
               >
                 APIs
               </Link>
             </li>
             <li>
-              <a
-                href="#talk-to-us"
+              <Link
+                href="/#talk-to-us"
                 className="hover:text-gray-300 transition-colors"
+                scroll={true}
               >
                 Talk to Us
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
