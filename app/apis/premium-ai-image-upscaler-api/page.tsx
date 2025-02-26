@@ -18,7 +18,7 @@ export default function AIImageUpscalerAPI() {
         itemType="https://schema.org/SoftwareApplication"
       >
         {/* Hero Section */}
-        <section className="py-20 px-4 bg-black/50 border-b border-white/10">
+        <section className="py-20 px-4 border-b border-white/10">
           <div className="container mx-auto text-center">
             <div className="flex items-center justify-center gap-4 mb-6">
               <Image
@@ -57,10 +57,6 @@ export default function AIImageUpscalerAPI() {
                   Try API for Free
                 </a>
               </Button>
-              <p className="text-sm text-gray-400" itemProp="offers">
-                No credit card required • Instant API access • Free tier
-                available
-              </p>
             </div>
           </div>
         </section>
@@ -117,9 +113,6 @@ export default function AIImageUpscalerAPI() {
                           height={400}
                           className="rounded-lg w-full"
                         />
-                        <p className="text-sm text-gray-400">
-                          Standard resolution input image
-                        </p>
                       </div>
                       <div className="space-y-2">
                         <h3 className="text-lg font-semibold">
@@ -132,9 +125,6 @@ export default function AIImageUpscalerAPI() {
                           height={400}
                           className="rounded-lg w-full"
                         />
-                        <p className="text-sm text-gray-400">
-                          4x resolution enhancement with AI
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -145,7 +135,7 @@ export default function AIImageUpscalerAPI() {
         </section>
 
         {/* Key Features Section */}
-        <section className="py-16 px-4 bg-white/5">
+        <section className="py-16 px-4 border-t border-white/10">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
               Key Features of Our Image Upscaler API
@@ -156,7 +146,7 @@ export default function AIImageUpscalerAPI() {
                   High-Quality Results
                 </h3>
                 <p className="text-gray-400">
-                  Advanced AI algorithms ensure superior image enhancement with
+                  Advanced AI model ensures superior image enhancement with
                   preserved details and sharp edges.
                 </p>
               </div>
@@ -186,8 +176,17 @@ export default function AIImageUpscalerAPI() {
             </h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400 text-center mb-8">
-                Integrate our API in minutes with comprehensive documentation
-                and code examples in multiple programming languages
+                Please find our API docs and try the API on the{" "}
+                <a
+                  href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-200 hover:underline"
+                >
+                  RapidAPI Playground
+                </a>
+                . Code samples are available for all languages and frameworks -
+                JavaScript / Node.js, Python, PHP, Swift, and more:
               </p>
               <div className="grid grid-cols-3 md:grid-cols-5 gap-8 max-w-3xl mx-auto">
                 <Image
@@ -231,14 +230,17 @@ export default function AIImageUpscalerAPI() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-20 px-4 bg-white/5">
+        <section className="py-20 px-4">
           <div className="container mx-auto">
             <h2 className="text-4xl font-bold text-center mb-4">
               Plans and Pricing
             </h2>
             <p className="text-center text-gray-400 mb-12">
               If the plans below do not meet your needs, please{" "}
-              <a href="/contact" className="text-blue-400 hover:underline">
+              <a
+                href="mailto:support@apilexica.com"
+                className="text-white hover:text-gray-200 hover:underline"
+              >
                 contact us
               </a>{" "}
               for a custom pricing plan.
@@ -253,22 +255,21 @@ export default function AIImageUpscalerAPI() {
                 </div>
 
                 <div className="mb-8">
-                  <div className="text-3xl font-bold mb-2">500</div>
-                  <div className="text-gray-400">Businesses / Month</div>
+                  <div className="text-3xl font-bold mb-2">5</div>
+                  <div className="text-gray-400">Requests / Month</div>
                   <div className="text-sm text-gray-500 mt-1">Hard limit</div>
                 </div>
 
-                <div className="mb-8">
-                  <div className="font-semibold mb-2">Rate Limit</div>
-                  <div>1000 requests per hour</div>
-                </div>
-
                 <Button
-                  className="bg-blue-600 hover:bg-blue-700 text-white mt-auto"
+                  className="bg-white hover:bg-gray-200 text-black transition-colors mt-auto"
                   size="lg"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1/pricing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Try Now
                   </a>
                 </Button>
@@ -282,24 +283,20 @@ export default function AIImageUpscalerAPI() {
                 </div>
 
                 <div className="mb-8">
-                  <div className="text-3xl font-bold mb-2">20,000</div>
-                  <div className="text-gray-400">Businesses / Month</div>
-                  <div className="text-sm text-gray-500 mt-1">
-                    + $0.003 per additional
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <div className="font-semibold mb-2">Rate Limit</div>
-                  <div>5 requests per second</div>
+                  <div className="text-3xl font-bold mb-2">5,000</div>
+                  <div className="text-gray-400">Requests / Month</div>
                 </div>
 
                 <Button
-                  className="bg-blue-600 hover:bg-blue-700 text-white mt-auto"
+                  className="bg-white hover:bg-gray-200 text-black transition-colors mt-auto"
                   size="lg"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1/pricing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Try Now
                   </a>
                 </Button>
@@ -313,24 +310,20 @@ export default function AIImageUpscalerAPI() {
                 </div>
 
                 <div className="mb-8">
-                  <div className="text-3xl font-bold mb-2">100,000</div>
-                  <div className="text-gray-400">Businesses / Month</div>
-                  <div className="text-sm text-gray-500 mt-1">
-                    + $0.002 per additional
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <div className="font-semibold mb-2">Rate Limit</div>
-                  <div>8 requests per second</div>
+                  <div className="text-3xl font-bold mb-2">15,000</div>
+                  <div className="text-gray-400">Requests / Month</div>
                 </div>
 
                 <Button
-                  className="bg-blue-600 hover:bg-blue-700 text-white mt-auto"
+                  className="bg-white hover:bg-gray-200 text-black transition-colors mt-auto"
                   size="lg"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1/pricing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Try Now
                   </a>
                 </Button>
@@ -344,24 +337,20 @@ export default function AIImageUpscalerAPI() {
                 </div>
 
                 <div className="mb-8">
-                  <div className="text-3xl font-bold mb-2">300,000</div>
-                  <div className="text-gray-400">Businesses / Month</div>
-                  <div className="text-sm text-gray-500 mt-1">
-                    + $0.001 per additional
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <div className="font-semibold mb-2">Rate Limit</div>
-                  <div>10 requests per second</div>
+                  <div className="text-3xl font-bold mb-2">30,000</div>
+                  <div className="text-gray-400">Requests / Month</div>
                 </div>
 
                 <Button
-                  className="bg-blue-600 hover:bg-blue-700 text-white mt-auto"
+                  className="bg-white hover:bg-gray-200 text-black transition-colors mt-auto"
                   size="lg"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/premium-ai-image-upscaler-api1/pricing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Try Now
                   </a>
                 </Button>
@@ -370,47 +359,8 @@ export default function AIImageUpscalerAPI() {
           </div>
         </section>
 
-        {/* FAQ Section for SEO */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Frequently Asked Questions
-            </h2>
-            <div className="max-w-3xl mx-auto space-y-6">
-              <div className="border border-white/10 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">
-                  What image formats are supported?
-                </h3>
-                <p className="text-gray-400">
-                  Our API supports all major image formats including JPG, PNG,
-                  WEBP, BMP, and TIFF. Images are returned in the same format as
-                  the input by default.
-                </p>
-              </div>
-              <div className="border border-white/10 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">
-                  What is the maximum image size?
-                </h3>
-                <p className="text-gray-400">
-                  The API supports images up to 4096x4096 pixels in the free
-                  tier, with higher limits available in premium plans.
-                </p>
-              </div>
-              <div className="border border-white/10 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">
-                  How fast is the processing?
-                </h3>
-                <p className="text-gray-400">
-                  Average processing time is 2-3 seconds per image, with faster
-                  processing available for enterprise customers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
-        <section className="py-16 px-4 bg-white/5">
+        <section className="py-16 px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
               Ready to Enhance Your Images?
