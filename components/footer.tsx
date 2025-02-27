@@ -10,19 +10,23 @@ export default function Footer() {
           </div>
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="https://github.com/APILexica"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="mailto:maxhager28@gmail.com"
+              href="mailto:support@apilexica.com"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Mail className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://x.com/apilexica"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg
@@ -34,7 +38,9 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/apilexica/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Linkedin className="w-6 h-6" />
