@@ -8,31 +8,24 @@ export default function TalkToUs() {
     >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-12">Talk to Us</h2>
-        <div className="max-w-3xl mx-auto flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <Script
             src="https://static.zcal.co/embed/v1/embed.js"
             strategy="lazyOnload"
           />
-          <div
-            className="zcal-inline-widget rounded-lg"
+          <iframe
+            src="https://zcal.co/i/UBmeShzv?embed=1&view=month"
+            className="w-full"
             style={{
-              minWidth: "280px",
-              width: "100%",
-              maxWidth: "400px",
-              height: "700px",
+              border: "none",
+              height: "800px",
+              width: "1000px",
+              maxWidth: "100%",
               overflow: "hidden",
-              margin: "0 auto",
-              display: "flex",
-              justifyContent: "center",
             }}
-          >
-            <a
-              href="https://zcal.co/i/UBmeShzv"
-              className="text-white hover:text-gray-200"
-            >
-              Loading calendar...
-            </a>
-          </div>
+            loading="lazy"
+            scrolling="no"
+          ></iframe>
         </div>
       </div>
     </section>
