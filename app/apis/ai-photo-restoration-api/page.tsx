@@ -173,32 +173,59 @@ export default function AIPhotoRestorationAPI() {
         <section className="py-16 px-4 border-t border-white/10">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-6">
-              Easy to Implement
+              Easy Integration
             </h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400 text-center mb-8">
-                Simple REST API endpoint with comprehensive documentation and
-                examples in multiple programming languages.
+                Please find our API docs and try the API on the{" "}
+                <a
+                  href="https://rapidapi.com/arxivgpt-arxivgpt-default/api/ai-photo-restoration-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-200 hover:underline"
+                >
+                  RapidAPI Playground
+                </a>
+                . Code samples are available for all languages and frameworks -
+                JavaScript / Node.js, Python, PHP, Swift, and more:
               </p>
-              <pre className="bg-gray-900 p-6 rounded-lg overflow-x-auto">
-                <code className="text-sm text-gray-300">
-                  {`import requests
-
-url = "https://ai-photo-restoration-api.p.rapidapi.com/restore"
-
-querystring = {
-    "image_url": "YOUR_IMAGE_URL"
-}
-
-headers = {
-    "x-rapidapi-key": "YOUR_API_KEY",
-    "x-rapidapi-host": "ai-photo-restoration-api.p.rapidapi.com"
-}
-
-response = requests.get(url, headers=headers, params=querystring)
-data = response.json()`}
-                </code>
-              </pre>
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-8 max-w-3xl mx-auto">
+                <Image
+                  src="/js.png"
+                  alt="JavaScript SDK available"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+                <Image
+                  src="/python.png"
+                  alt="Python SDK available"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+                <Image
+                  src="/nodejs.png"
+                  alt="Node.js SDK available"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+                <Image
+                  src="/php.png"
+                  alt="PHP SDK available"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+                <Image
+                  src="/swift.svg"
+                  alt="Swift SDK available"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+              </div>
             </div>
           </div>
         </section>

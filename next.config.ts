@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["storage.googleapis.com"],
+    domains: ["storage.googleapis.com", "api-lexica.s3.us-east-1.amazonaws.com", "api-lexica.s3.amazonaws.com"],
   },
 };
 
