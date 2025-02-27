@@ -169,7 +169,7 @@ export default function AIImageUpscalerAPI() {
         </section>
 
         {/* Integration Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 border-t border-white/10">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-6">
               Easy Integration
@@ -230,7 +230,7 @@ export default function AIImageUpscalerAPI() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-20 px-4">
+        <section className="py-20 px-4 border-t border-white/10">
           <div className="container mx-auto">
             <h2 className="text-4xl font-bold text-center mb-4">
               Plans and Pricing
@@ -360,7 +360,7 @@ export default function AIImageUpscalerAPI() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 border-t border-white/10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
               Ready to Enhance Your Images?
